@@ -1,0 +1,695 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Mariana Oliveira",
+      "email": "mariana@univ.edu.br",
+      "senha": "123",
+      "perfil": "ALUNO",
+      "ativo": true,
+      "criadoEm": "2026-08-01T09:00:00"
+    },
+    {
+      "id": 2,
+      "nome": "Pedro Rocha",
+      "email": "pedro@univ.edu.br",
+      "senha": "123",
+      "perfil": "ALUNO",
+      "ativo": true,
+      "criadoEm": "2026-08-01T09:05:00"
+    },
+    {
+      "id": 3,
+      "nome": "Rafael Gomes",
+      "email": "rafael@univ.edu.br",
+      "senha": "123",
+      "perfil": "ALUNO",
+      "ativo": true,
+      "criadoEm": "2026-08-01T09:10:00"
+    },
+    {
+      "id": 4,
+      "nome": "Lívia Martins",
+      "email": "livia@univ.edu.br",
+      "senha": "123",
+      "perfil": "ALUNO",
+      "ativo": true,
+      "criadoEm": "2026-08-01T09:15:00"
+    },
+    {
+      "id": 5,
+      "nome": "Bianca Teles",
+      "email": "bianca@univ.edu.br",
+      "senha": "123",
+      "perfil": "ALUNO",
+      "ativo": true,
+      "criadoEm": "2026-08-01T09:20:00"
+    },
+    {
+      "id": 6,
+      "nome": "Lucas Mendes",
+      "email": "lucas@univ.edu.br",
+      "senha": "123",
+      "perfil": "ALUNO",
+      "ativo": true,
+      "criadoEm": "2026-08-02T10:00:00"
+    },
+    {
+      "id": 7,
+      "nome": "Carlos Lima",
+      "email": "carlos@univ.edu.br",
+      "senha": "123",
+      "perfil": "PROFESSOR",
+      "ativo": true,
+      "criadoEm": "2026-02-01T08:00:00"
+    },
+    {
+      "id": 8,
+      "nome": "Marta Alves",
+      "email": "marta@univ.edu.br",
+      "senha": "123",
+      "perfil": "PROFESSOR",
+      "ativo": true,
+      "criadoEm": "2026-02-01T08:05:00"
+    },
+    {
+      "id": 9,
+      "nome": "Rui Prado",
+      "email": "rui@ufg.br",
+      "senha": "123",
+      "perfil": "PROFESSOR",
+      "ativo": true,
+      "criadoEm": "2026-02-01T08:10:00"
+    },
+    {
+      "id": 10,
+      "nome": "Ana Reis",
+      "email": "anareis@univ.edu.br",
+      "senha": "123",
+      "perfil": "PROFESSOR",
+      "ativo": true,
+      "criadoEm": "2026-02-01T08:15:00"
+    },
+    {
+      "id": 11,
+      "nome": "Bruno Cardoso",
+      "email": "bruno@univ.edu.br",
+      "senha": "123",
+      "perfil": "PROFESSOR",
+      "ativo": true,
+      "criadoEm": "2026-02-01T08:20:00"
+    },
+    {
+      "id": 12,
+      "nome": "Profa. Helena Costa",
+      "email": "helena@univ.edu.br",
+      "senha": "123",
+      "perfil": "COORDENADOR",
+      "ativo": true,
+      "criadoEm": "2026-01-15T08:00:00"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nome": "Ciência da Computação",
+      "codigo": "BCC",
+      "coordenadorId": 12
+    },
+    {
+      "id": 2,
+      "nome": "Sistemas de Informação",
+      "codigo": "BSI",
+      "coordenadorId": 12
+    }
+  ],
+  "alunos": [
+    {
+      "id": 1,
+      "usuarioId": 1,
+      "cursoId": 1,
+      "matricula": "20221001"
+    },
+    {
+      "id": 2,
+      "usuarioId": 2,
+      "cursoId": 1,
+      "matricula": "20221002"
+    },
+    {
+      "id": 3,
+      "usuarioId": 3,
+      "cursoId": 1,
+      "matricula": "20221003"
+    },
+    {
+      "id": 4,
+      "usuarioId": 4,
+      "cursoId": 2,
+      "matricula": "20222004"
+    },
+    {
+      "id": 5,
+      "usuarioId": 5,
+      "cursoId": 2,
+      "matricula": "20222005"
+    },
+    {
+      "id": 6,
+      "usuarioId": 6,
+      "cursoId": 1,
+      "matricula": "20231006"
+    }
+  ],
+  "professores": [
+    {
+      "id": 1,
+      "usuarioId": 7,
+      "siape": "1045210",
+      "titulacao": "DOUTOR",
+      "areaAtuacao": "Inteligência Artificial e Visão Computacional",
+      "externo": false,
+      "instituicaoOrigem": "Universidade Federal Modelo"
+    },
+    {
+      "id": 2,
+      "usuarioId": 8,
+      "siape": "1098432",
+      "titulacao": "DOUTOR",
+      "areaAtuacao": "Engenharia de Software e Sistemas Distribuídos",
+      "externo": false,
+      "instituicaoOrigem": "Universidade Federal Modelo"
+    },
+    {
+      "id": 3,
+      "usuarioId": 9,
+      "siape": "2088120",
+      "titulacao": "DOUTOR",
+      "areaAtuacao": "Aprendizado de Máquina Aplicado à Saúde",
+      "externo": true,
+      "instituicaoOrigem": "UFG"
+    },
+    {
+      "id": 4,
+      "usuarioId": 10,
+      "siape": "1120345",
+      "titulacao": "MESTRE",
+      "areaAtuacao": "Redes de Computadores e Internet das Coisas",
+      "externo": false,
+      "instituicaoOrigem": "Universidade Federal Modelo"
+    },
+    {
+      "id": 5,
+      "usuarioId": 11,
+      "siape": "1156789",
+      "titulacao": "ESPECIALISTA",
+      "areaAtuacao": "Segurança da Informação e Banco de Dados",
+      "externo": false,
+      "instituicaoOrigem": "Universidade Federal Modelo"
+    }
+  ],
+  "periodos": [
+    {
+      "id": 1,
+      "descricao": "2026-2",
+      "inicioAgendamento": "2026-11-23",
+      "fimAgendamento": "2026-12-05",
+      "prazoEnvioPreBanca": "2026-11-20",
+      "prazoEnvioVersaoFinal": "2026-12-19"
+    },
+    {
+      "id": 2,
+      "descricao": "2026-1",
+      "inicioAgendamento": "2026-06-15",
+      "fimAgendamento": "2026-06-30",
+      "prazoEnvioPreBanca": "2026-06-10",
+      "prazoEnvioVersaoFinal": "2026-07-15"
+    }
+  ],
+  "salas": [
+    {
+      "id": 1,
+      "nome": "Sala 204",
+      "bloco": "Bloco C",
+      "capacidade": 30,
+      "possuiProjetor": true
+    },
+    {
+      "id": 2,
+      "nome": "Sala 110",
+      "bloco": "Bloco B",
+      "capacidade": 24,
+      "possuiProjetor": true
+    },
+    {
+      "id": 3,
+      "nome": "Auditório 001",
+      "bloco": "Bloco A",
+      "capacidade": 80,
+      "possuiProjetor": true
+    },
+    {
+      "id": 4,
+      "nome": "Sala 102",
+      "bloco": "Bloco C",
+      "capacidade": 18,
+      "possuiProjetor": false
+    }
+  ],
+  "tccs": [
+    {
+      "id": 1,
+      "alunoId": 1,
+      "orientadorId": 1,
+      "coorientadorId": 4,
+      "periodoId": 1,
+      "titulo": "Classificação de imagens de raio-X com redes neurais convolucionais",
+      "resumo": "Este trabalho investiga arquiteturas de redes neurais convolucionais (ResNet-50 e DenseNet-121) para auxílio ao diagnóstico de anomalias pulmonares em radiografias torácicas com validação cruzada estratificada.",
+      "palavrasChave": "Visão Computacional, Deep Learning, Raio-X, CNN",
+      "status": "APTO_BANCA",
+      "criadoEm": "2026-09-10T14:00:00"
+    },
+    {
+      "id": 2,
+      "alunoId": 2,
+      "orientadorId": 1,
+      "coorientadorId": null,
+      "periodoId": 1,
+      "titulo": "App móvel para controle de estoque com sincronização offline",
+      "resumo": "Desenvolvimento de aplicativo multiplataforma utilizando arquitetura offline-first para gestão de estoques em pequenas cooperativas rurais.",
+      "palavrasChave": "Offline-First, Mobile, Controle de Estoque, Sincronização",
+      "status": "EM_ANDAMENTO",
+      "criadoEm": "2026-09-12T10:30:00"
+    },
+    {
+      "id": 3,
+      "alunoId": 3,
+      "orientadorId": 2,
+      "coorientadorId": null,
+      "periodoId": 1,
+      "titulo": "Recomendação de disciplinas optativas baseada em grafos acadêmicos",
+      "resumo": "Sistema de recomendação baseado em filtragem colaborativa e grafos de pré-requisitos para apoiar estudantes na escolha de disciplinas optativas.",
+      "palavrasChave": "Sistemas de Recomendação, Grafos, Educação",
+      "status": "AGENDADO",
+      "criadoEm": "2026-09-05T16:15:00"
+    },
+    {
+      "id": 4,
+      "alunoId": 4,
+      "orientadorId": 4,
+      "coorientadorId": null,
+      "periodoId": 1,
+      "titulo": "Monitoramento da qualidade do ar com IoT e protocolo MQTT",
+      "resumo": "Protótipo de estação de baixo custo baseada em ESP32 para leitura contínua de material particulado e gases em campus universitário.",
+      "palavrasChave": "IoT, MQTT, Qualidade do Ar, ESP32",
+      "status": "AGENDADO",
+      "criadoEm": "2026-09-08T11:20:00"
+    },
+    {
+      "id": 5,
+      "alunoId": 5,
+      "orientadorId": 5,
+      "coorientadorId": 2,
+      "periodoId": 1,
+      "titulo": "Detecção de fraudes financeiras com redes de grafos heterogêneos",
+      "resumo": "Estudo comparativo entre modelos tabulares e Graph Neural Networks na identificação de transações atípicas em meios de pagamento instantâneos.",
+      "palavrasChave": "Detecção de Fraudes, GNN, Segurança",
+      "status": "APROVADO_COM_RESSALVAS",
+      "criadoEm": "2026-08-28T09:40:00"
+    }
+  ],
+  "arquivos": [
+    {
+      "id": 1,
+      "tccId": 1,
+      "enviadoPorId": 1,
+      "tipo": "PRE_BANCA",
+      "versao": 1,
+      "nomeOriginal": "tcc_mariana_v1.pdf",
+      "caminhoStorage": "/uploads/tcc-1/v1_tcc_mariana_v1.pdf",
+      "mimeType": "application/pdf",
+      "tamanhoBytes": 4299161,
+      "hashSha256": "3b8a10f9d4c68e2f5b1a74c08a9e6d2c11f74a38d9e20b4c1a8d7e6f5b4c3d21",
+      "enviadoEm": "2026-11-10T21:05:00",
+      "status": "REJEITADO",
+      "observacao": "Faltou detalhar a matriz de confusão e os hiperparâmetros do treinamento na seção 4."
+    },
+    {
+      "id": 2,
+      "tccId": 1,
+      "enviadoPorId": 1,
+      "tipo": "PRE_BANCA",
+      "versao": 2,
+      "nomeOriginal": "tcc_mariana_v2.pdf",
+      "caminhoStorage": "/uploads/tcc-1/v2_tcc_mariana_v2.pdf",
+      "mimeType": "application/pdf",
+      "tamanhoBytes": 5033164,
+      "hashSha256": "9f2c8d14b3e76a91c05f48d2a19e67b3f54c21098a7b6c5d4e3f2a1b0c9da71e",
+      "enviadoEm": "2026-11-18T10:32:00",
+      "status": "APROVADO_ORIENTADOR",
+      "observacao": "Ajustei a seção de resultados conforme a reunião. Versão revisada e apta para defesa."
+    },
+    {
+      "id": 3,
+      "tccId": 2,
+      "enviadoPorId": 2,
+      "tipo": "PRE_BANCA",
+      "versao": 1,
+      "nomeOriginal": "tcc_pedro_prebanca_v1.pdf",
+      "caminhoStorage": "/uploads/tcc-2/v1_tcc_pedro_prebanca_v1.pdf",
+      "mimeType": "application/pdf",
+      "tamanhoBytes": 3145728,
+      "hashSha256": "7a4e2c19b8d54f03a6c2e8d1f7b9a4c5e6d3f2a1b8c7d6e5f4a3b2c1d0e9f8a7",
+      "enviadoEm": "2026-11-24T15:20:00",
+      "status": "PENDENTE",
+      "observacao": "Primeira versão completa para revisão antes da solicitação da banca."
+    },
+    {
+      "id": 4,
+      "tccId": 3,
+      "enviadoPorId": 3,
+      "tipo": "PRE_BANCA",
+      "versao": 1,
+      "nomeOriginal": "tcc_rafael_v1.pdf",
+      "caminhoStorage": "/uploads/tcc-3/v1_tcc_rafael_v1.pdf",
+      "mimeType": "application/pdf",
+      "tamanhoBytes": 3879731,
+      "hashSha256": "4c9d7e2a1b3f5d6e8a0c2b4d6f8a1c3e5b7d9f0a2c4e6b8d1f3a5c7e9b0d2f4a",
+      "enviadoEm": "2026-11-15T18:45:00",
+      "status": "APROVADO_ORIENTADOR",
+      "observacao": "Versão final pré-banca validada pela orientação."
+    },
+    {
+      "id": 5,
+      "tccId": 4,
+      "enviadoPorId": 4,
+      "tipo": "PRE_BANCA",
+      "versao": 1,
+      "nomeOriginal": "tcc_livia_iot_v1.pdf",
+      "caminhoStorage": "/uploads/tcc-4/v1_tcc_livia_iot_v1.pdf",
+      "mimeType": "application/pdf",
+      "tamanhoBytes": 4718592,
+      "hashSha256": "6e1f3a5b7c9d0e2f4a6b8c0d1e3f5a7b9c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f",
+      "enviadoEm": "2026-11-17T11:10:00",
+      "status": "APROVADO_ORIENTADOR",
+      "observacao": "Anexados os gráficos de calibração dos sensores."
+    },
+    {
+      "id": 6,
+      "tccId": 5,
+      "enviadoPorId": 5,
+      "tipo": "PRE_BANCA",
+      "versao": 1,
+      "nomeOriginal": "tcc_bianca_fraudes_v1.pdf",
+      "caminhoStorage": "/uploads/tcc-5/v1_tcc_bianca_fraudes_v1.pdf",
+      "mimeType": "application/pdf",
+      "tamanhoBytes": 5452595,
+      "hashSha256": "8d2f4a6c8e0b1d3f5a7c9e1b3d5f7a9c1e3b5d7f9a1c3e5b7d9f1a3c5e7b9d1f",
+      "enviadoEm": "2026-11-12T16:00:00",
+      "status": "APROVADO_ORIENTADOR",
+      "observacao": "Versão encaminhada para banca."
+    }
+  ],
+  "disponibilidades": [
+    { "id": 1, "professorId": 1, "inicio": "2026-11-24T08:00:00", "fim": "2026-11-24T12:00:00" },
+    { "id": 2, "professorId": 1, "inicio": "2026-11-24T14:00:00", "fim": "2026-11-24T18:00:00" },
+    { "id": 3, "professorId": 1, "inicio": "2026-11-25T10:00:00", "fim": "2026-11-25T18:00:00" },
+    { "id": 4, "professorId": 1, "inicio": "2026-11-26T08:00:00", "fim": "2026-11-26T12:00:00" },
+    { "id": 5, "professorId": 1, "inicio": "2026-11-27T10:00:00", "fim": "2026-11-27T18:00:00" },
+
+    { "id": 6, "professorId": 2, "inicio": "2026-11-24T08:00:00", "fim": "2026-11-24T18:00:00" },
+    { "id": 7, "professorId": 2, "inicio": "2026-11-25T10:00:00", "fim": "2026-11-25T18:00:00" },
+    { "id": 8, "professorId": 2, "inicio": "2026-11-26T08:00:00", "fim": "2026-11-26T12:00:00" },
+    { "id": 9, "professorId": 2, "inicio": "2026-11-27T10:00:00", "fim": "2026-11-27T18:00:00" },
+
+    { "id": 10, "professorId": 3, "inicio": "2026-11-24T08:00:00", "fim": "2026-11-24T10:00:00" },
+    { "id": 11, "professorId": 3, "inicio": "2026-11-24T14:00:00", "fim": "2026-11-24T18:00:00" },
+    { "id": 12, "professorId": 3, "inicio": "2026-11-25T10:00:00", "fim": "2026-11-25T17:00:00" },
+    { "id": 13, "professorId": 3, "inicio": "2026-11-26T08:00:00", "fim": "2026-11-26T12:00:00" },
+    { "id": 14, "professorId": 3, "inicio": "2026-11-27T10:00:00", "fim": "2026-11-27T16:00:00" },
+
+    { "id": 15, "professorId": 4, "inicio": "2026-11-24T08:00:00", "fim": "2026-11-24T18:00:00" },
+    { "id": 16, "professorId": 4, "inicio": "2026-11-25T10:00:00", "fim": "2026-11-25T18:00:00" },
+    { "id": 17, "professorId": 4, "inicio": "2026-11-26T08:00:00", "fim": "2026-11-26T18:00:00" },
+    { "id": 18, "professorId": 4, "inicio": "2026-11-27T08:00:00", "fim": "2026-11-27T18:00:00" },
+
+    { "id": 19, "professorId": 5, "inicio": "2026-11-24T14:00:00", "fim": "2026-11-24T18:00:00" },
+    { "id": 20, "professorId": 5, "inicio": "2026-11-25T10:00:00", "fim": "2026-11-25T16:00:00" },
+    { "id": 21, "professorId": 5, "inicio": "2026-11-26T08:00:00", "fim": "2026-11-26T12:00:00" },
+    { "id": 22, "professorId": 5, "inicio": "2026-11-27T14:00:00", "fim": "2026-11-27T18:00:00" }
+  ],
+  "bancas": [
+    {
+      "id": 1,
+      "tccId": 3,
+      "salaId": 1,
+      "arquivoAvaliadoId": 4,
+      "dataHoraInicio": "2026-11-25T14:00:00",
+      "duracaoMinutos": 90,
+      "modalidade": "PRESENCIAL",
+      "status": "CONFIRMADA",
+      "criadoEm": "2026-11-18T09:00:00"
+    },
+    {
+      "id": 2,
+      "tccId": 4,
+      "salaId": 1,
+      "arquivoAvaliadoId": 5,
+      "dataHoraInicio": "2026-11-25T14:30:00",
+      "duracaoMinutos": 90,
+      "modalidade": "PRESENCIAL",
+      "status": "SOLICITADA",
+      "criadoEm": "2026-11-20T14:20:00"
+    },
+    {
+      "id": 3,
+      "tccId": 5,
+      "salaId": 2,
+      "arquivoAvaliadoId": 6,
+      "dataHoraInicio": "2026-11-21T16:00:00",
+      "duracaoMinutos": 90,
+      "modalidade": "PRESENCIAL",
+      "status": "REALIZADA",
+      "notaFinal": 8.5,
+      "resultado": "APROVADO_COM_RESSALVAS",
+      "prazoCorrecoes": "2026-12-19",
+      "criadoEm": "2026-11-13T10:00:00"
+    }
+  ],
+  "membrosBanca": [
+    {
+      "id": 1,
+      "bancaId": 1,
+      "professorId": 2,
+      "papel": "PRESIDENTE",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-18T09:00:00"
+    },
+    {
+      "id": 2,
+      "bancaId": 1,
+      "professorId": 3,
+      "papel": "AVALIADOR",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-18T11:30:00"
+    },
+    {
+      "id": 3,
+      "bancaId": 1,
+      "professorId": 1,
+      "papel": "AVALIADOR",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-18T14:00:00"
+    },
+    {
+      "id": 4,
+      "bancaId": 1,
+      "professorId": 4,
+      "papel": "SUPLENTE",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-19T08:40:00"
+    },
+
+    {
+      "id": 5,
+      "bancaId": 2,
+      "professorId": 4,
+      "papel": "PRESIDENTE",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-20T14:20:00"
+    },
+    {
+      "id": 6,
+      "bancaId": 2,
+      "professorId": 5,
+      "papel": "AVALIADOR",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-20T16:00:00"
+    },
+    {
+      "id": 7,
+      "bancaId": 2,
+      "professorId": 2,
+      "papel": "AVALIADOR",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-21T09:10:00"
+    },
+
+    {
+      "id": 8,
+      "bancaId": 3,
+      "professorId": 5,
+      "papel": "PRESIDENTE",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-13T10:00:00"
+    },
+    {
+      "id": 9,
+      "bancaId": 3,
+      "professorId": 2,
+      "papel": "AVALIADOR",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-13T15:00:00"
+    },
+    {
+      "id": 10,
+      "bancaId": 3,
+      "professorId": 3,
+      "papel": "AVALIADOR",
+      "statusConvite": "ACEITO",
+      "respondidoEm": "2026-11-14T08:30:00"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": 1,
+      "membroBancaId": 1,
+      "notaTexto": 2.7,
+      "notaMetodologia": 3.5,
+      "notaApresentacao": 1.8,
+      "notaArguicao": 0.8,
+      "nota": 8.8,
+      "parecer": "Boa modelagem de grafos e clareza na apresentação dos resultados.",
+      "exigeCorrecoes": false,
+      "rascunho": false,
+      "registradaEm": "2026-11-25T15:40:00"
+    },
+    {
+      "id": 2,
+      "membroBancaId": 2,
+      "notaTexto": 2.6,
+      "notaMetodologia": 3.4,
+      "notaApresentacao": 1.7,
+      "notaArguicao": 0.9,
+      "nota": 8.6,
+      "parecer": "Experimentos consistentes; recomenda-se ampliar a discussão sobre métricas de cobertura.",
+      "exigeCorrecoes": false,
+      "rascunho": false,
+      "registradaEm": "2026-11-25T15:45:00"
+    },
+    {
+      "id": 3,
+      "membroBancaId": 8,
+      "notaTexto": 2.5,
+      "notaMetodologia": 3.5,
+      "notaApresentacao": 1.7,
+      "notaArguicao": 0.8,
+      "nota": 8.5,
+      "parecer": "Trabalho sólido na área de detecção de fraudes; ajustar referências do capítulo 2 antes da versão final.",
+      "exigeCorrecoes": true,
+      "rascunho": false,
+      "registradaEm": "2026-11-21T17:40:00"
+    },
+    {
+      "id": 4,
+      "membroBancaId": 9,
+      "notaTexto": 2.6,
+      "notaMetodologia": 3.4,
+      "notaApresentacao": 1.8,
+      "notaArguicao": 0.9,
+      "nota": 8.7,
+      "parecer": "Excelente apresentação e domínio do tema durante a arguição.",
+      "exigeCorrecoes": false,
+      "rascunho": false,
+      "registradaEm": "2026-11-21T17:42:00"
+    },
+    {
+      "id": 5,
+      "membroBancaId": 10,
+      "notaTexto": 2.4,
+      "notaMetodologia": 3.3,
+      "notaApresentacao": 1.7,
+      "notaArguicao": 0.9,
+      "nota": 8.3,
+      "parecer": "Metodologia bem aplicada; revisar a tabela comparativa de latência.",
+      "exigeCorrecoes": true,
+      "rascunho": false,
+      "registradaEm": "2026-11-21T17:45:00"
+    }
+  ],
+  "atas": [
+    {
+      "id": 1,
+      "bancaId": 3,
+      "caminhoPdf": "/atas/ata-banca-3.pdf",
+      "geradaEm": "2026-11-21T17:50:00",
+      "assinada": true
+    }
+  ],
+  "notificacoes": [
+    {
+      "id": 1,
+      "usuarioId": 1,
+      "bancaId": null,
+      "tipo": "ENVIO_ARQUIVO",
+      "mensagem": "Seu orientador aprovou o PDF de pré-banca (v2).",
+      "lida": false,
+      "enviadaEm": "2026-11-25T14:10:00"
+    },
+    {
+      "id": 2,
+      "usuarioId": 1,
+      "bancaId": null,
+      "tipo": "LEMBRETE",
+      "mensagem": "A janela de agendamento de bancas está aberta de 23/11 a 05/12.",
+      "lida": true,
+      "enviadaEm": "2026-11-23T08:00:00"
+    },
+    {
+      "id": 3,
+      "usuarioId": 7,
+      "bancaId": null,
+      "tipo": "ENVIO_ARQUIVO",
+      "mensagem": "Pedro Rocha enviou a versão v1 (PRE_BANCA) aguardando sua avaliação.",
+      "lida": false,
+      "enviadaEm": "2026-11-24T15:21:00"
+    },
+    {
+      "id": 4,
+      "usuarioId": 7,
+      "bancaId": 1,
+      "tipo": "CONVITE",
+      "mensagem": "Você integra como avaliador a banca de Rafael Gomes (25/11 às 14:00).",
+      "lida": false,
+      "enviadaEm": "2026-11-25T08:00:00"
+    },
+    {
+      "id": 5,
+      "usuarioId": 12,
+      "bancaId": 2,
+      "tipo": "AGENDAMENTO",
+      "mensagem": "Nova solicitação de banca de Lívia Martins na Sala 204 (25/11 às 14:30) requer verificação de conflito.",
+      "lida": false,
+      "enviadaEm": "2026-11-20T14:25:00"
+    },
+    {
+      "id": 6,
+      "usuarioId": 5,
+      "bancaId": 3,
+      "tipo": "RESULTADO",
+      "mensagem": "Resultado da sua banca: APROVADO_COM_RESSALVAS (Média 8,5). Ata disponível.",
+      "lida": false,
+      "enviadaEm": "2026-11-21T17:50:00"
+    }
+  ]
+}
