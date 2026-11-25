@@ -1,5 +1,295 @@
+:root {
+  --btcc-sidebar-bg: #0f2342;
+  --btcc-sidebar-active: #1f3a64;
+  --btcc-sidebar-hover: rgba(255, 255, 255, 0.08);
+  --btcc-bg: #f5f7fb;
+  --btcc-border: #e5e9f2;
+  --btcc-primary: #0d6efd;
+  --btcc-conflict-bg: #fdecec;
+}
+
 body {
-  background-color: #f5f7fb;
+  background-color: var(--btcc-bg);
   color: #1e293b;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+}
+
+/* Layout principal com Sidebar fixa em desktop */
+.btcc-app-shell {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--btcc-bg);
+}
+
+.btcc-sidebar {
+  width: 248px;
+  min-width: 248px;
+  background-color: var(--btcc-sidebar-bg);
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 0.85rem;
+}
+
+.btcc-sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem 1.5rem;
+  text-decoration: none;
+}
+
+.btcc-sidebar .nav-link {
+  color: #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.925rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btcc-sidebar .nav-link:hover {
+  background-color: var(--btcc-sidebar-hover);
+  color: #ffffff;
+}
+
+.btcc-sidebar .nav-link.active {
+  background-color: var(--btcc-sidebar-active);
+  color: #ffffff;
+}
+
+.btcc-sidebar-footer {
+  margin-top: auto;
+  padding: 1rem 0.75rem 0.25rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.btcc-main-wrapper {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.btcc-topbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--btcc-border);
+  padding: 0.75rem 1.75rem;
+}
+
+.btcc-content {
+  padding: 1.75rem;
+  flex: 1;
+}
+
+.btcc-card {
+  border: 1px solid var(--btcc-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(15, 35, 66, 0.04);
+  background-color: #ffffff;
+}
+
+.btcc-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tela de Login Split-Screen (Figma 01) */
+.btcc-login-wrapper {
+  min-height: 100vh;
+  display: flex;
+}
+
+.btcc-login-hero {
+  background: linear-gradient(145deg, #163e80 0%, #0f2a57 60%, #0b2042 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5rem;
+}
+
+.btcc-login-panel {
+  background-color: #f5f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.btcc-login-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border: 1px solid var(--btcc-border);
+  border-radius: 0.85rem;
+  padding: 2.25rem;
+  box-shadow: 0 10px 25px rgba(15, 35, 66, 0.06);
+}
+
+/* Stepper 5 etapas (Figma 02) */
+.btcc-stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: relative;
+  padding-top: 0.5rem;
+}
+
+.btcc-step-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.btcc-step-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 0.4rem;
+}
+
+.btcc-step-done {
+  background-color: #198754;
+  color: #ffffff;
+}
+
+.btcc-step-current {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.btcc-step-pending {
+  background-color: #ffffff;
+  color: #475569;
+  border: 1.5px solid #cbd5e1;
+}
+
+/* Área de upload drag-and-drop (Figma 03) */
+.btcc-dropzone {
+  border: 1.5px dashed #93c5fd;
+  border-radius: 0.75rem;
+  background-color: #f8fafc;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.btcc-dropzone:hover,
+.btcc-dropzone-active {
+  border-color: #0d6efd;
+  background-color: #eff6ff;
+}
+
+.btcc-dropzone-error {
+  border-color: #dc3545;
+  background-color: #fef2f2;
+}
+
+/* Slots de disponibilidade (Figma 04) */
+.btcc-slot-btn {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.45rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.btcc-slot-free {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border-color: #badbcc;
+}
+
+.btcc-slot-free:hover {
+  background-color: #badbcc;
+}
+
+.btcc-slot-selected {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-color: #0d6efd;
+}
+
+.btcc-slot-busy {
+  background-color: #f8fafc;
+  color: #94a3b8;
+  border-color: #e2e8f0;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+/* Linha com conflito de sala (Figma 05) */
+.btcc-row-conflict > td {
+  background-color: var(--btcc-conflict-bg) !important;
+}
+
+@media (max-width: 991.98px) {
+  .btcc-app-shell {
+    flex-direction: column;
+  }
+
+  .btcc-sidebar {
+    width: 100%;
+    min-width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .btcc-sidebar-footer {
+    display: none;
+  }
+
+  .btcc-content {
+    padding: 1rem;
+  }
+
+  .btcc-login-hero {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body,
+  .btcc-app-shell,
+  .btcc-content {
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .btcc-card {
+    border: none !important;
+    box-shadow: none !important;
+  }
 }
